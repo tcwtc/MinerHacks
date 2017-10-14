@@ -6,7 +6,7 @@ import collections
 import pymongo
 import datetime
 
-
+client = pymongo.MongoClient()
 
 class NewsQuery(object):
 

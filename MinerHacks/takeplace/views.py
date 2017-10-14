@@ -2,21 +2,33 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from takeplace.models import Article
+# from takeplace.models import Event
+import pymongo
 
-# Create your views here.
+client = pymongo.MongoClient('localhost', 27017)
+db = client['newsdata']
+collection = db["event_tab"]
+
+events = []
+
 def index(request):
-    # limit = 15
-    article = Article
+
+    for item in collection.find():
+        events.append(item)
+
+    # page = request.GET.get('ex1', 1)
     # print(request)
     # print(request.GET)
 
-    context = {
-        'title': article.title,
-        'body': article.body,
-        'url': article.url,
-        'date': article.date,
-        'location': article.location,
-    }
+    context = {'events': events[0:3]}
 
-    return render(request, 'takeplace/index.html')
+    # context = {
+    #     'id': event['id'],
+    #     'title': event['title'],
+    #     'summary': event['summary'],
+    #     'eventDate': event['eventDate'],
+    #     'country': event['country'],
+    #     'city': event['city']
+    # }
+
+    return render(request, 'takeplace/index.html', context)
