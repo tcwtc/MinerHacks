@@ -10,10 +10,10 @@ import datetime
 
 class NewsQuery(object):
 
-    def __init__(self):
+    def __init__(self, days=15):
         # 22d2e6f355774376a927b3735ec0b039
         self.er = EventRegistry(apiKey='9aa996a4-029c-4cc6-88dc-bd7cd42a8bf7')
-        startdate = datetime.datetime.now() - datetime.timedelta(days=15)
+        startdate = datetime.datetime.now() - datetime.timedelta(days=days)
         self.dateStart = datetime.date(startdate.year, startdate.month, startdate.day)
         # self.dateStart = datetime.date(2017, 10, 1)
         self.client = pymongo.MongoClient('localhost', 27017)
