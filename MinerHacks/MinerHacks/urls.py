@@ -20,5 +20,7 @@ from takeplace import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
-    url(r'^upload', views.post_upload, name='post_upload'),
+    url(r'^contact', views.contact, name='contact'),
+    url(r'^', views.index, name='index'),
+
 ]

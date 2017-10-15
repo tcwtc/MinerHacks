@@ -128,6 +128,3 @@ TEMPLATE_DIRS = (
 
 from mongoengine import connect
 connect('newsdata', host='127.0.0.1', port=27017)
-
-# from mongoengine import connect
-# connect('newsdata', host='127.0.0.1', port=27017)

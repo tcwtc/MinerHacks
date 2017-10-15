@@ -5,6 +5,7 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Take Place</title>
@@ -18,15 +19,68 @@
     <!--<script src="{% static 'js/highcharts.js' %}"></script>-->
     <!--<script src="{% static 'js/highcharts-more.js' %}"></script>-->
     <style>
+=======
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MinerHacks</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/full.css' %}" rel="stylesheet">
+  <style>
+>>>>>>> 97ecbd3c50496496f83bc787b772279bf4d7ad2f
        #map {
-        height: 400px;
+        height: 650px;
+         /*height: 80%;*/
         width: 100%;
        }
     </style>
 
-</head>
+  </head>
 
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Take Place</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link" href="#">About</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link" href="#">Services</a>-->
+            <!--</li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+
+<<<<<<< HEAD
 <body onload="initialize()">
+=======
+>>>>>>> 97ecbd3c50496496f83bc787b772279bf4d7ad2f
     <div class="container-fluid">
       <h1 class="display-5">Take Place</h1>
     </div>
@@ -179,6 +233,11 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNIsqGlDQqLRVQpeVrXTKxtAHgGHjh5lk&callback=initMap">
     </script>
 
-</body>
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/popper/popper.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  </body>
 
 </html>

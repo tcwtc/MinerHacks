@@ -47,6 +47,7 @@ def index(request):
     #     context = {'events': events[0:3], 'date': request.POST['date']}
 
     return render(request, 'takeplace/index.html', context)
+<<<<<<< HEAD
 
 
 from datetime import datetime
@@ -62,3 +63,10 @@ from django.http import HttpResponseRedirect
 #         post = {'content': request.POST['content']}
 #         # No need to call post.save() at this point -- it's already saved.
 #         return render(request, 'takeplace/upload.html', post)
+=======
+    # return render(request, 'static/main.html', context)
+
+def contact(request):
+
+    return render(request, 'takeplace/contact.html')
+>>>>>>> 97ecbd3c50496496f83bc787b772279bf4d7ad2f
