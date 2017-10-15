@@ -32,3 +32,8 @@ def index(request):
     # }
 
     return render(request, 'takeplace/index.html', context)
+    # return render(request, 'static/main.html', context)
+
+def contact(request):
+
+    return render(request, 'takeplace/contact.html')
