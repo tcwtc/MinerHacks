@@ -8,9 +8,11 @@ from django.db import models
 
 # Create your models here.
 class Event(Document):
-    id = StringField()
-    title = StringField()
-    summary = StringField()
-    eventDate = StringField()
-    country = StringField()
-    city = StringField()
+        id = StringField()
+        title = StringField()
+        summary = StringField()
+        eventDate = StringField()
+        country = StringField()
+        city = StringField()
+        lat = FloatField()
+        lng = FloatField()
